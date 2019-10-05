@@ -6,19 +6,19 @@
     font-family: 'Ovo', serif;
     color: rgb(16, 147, 167);
     margin-top: 1%;
-    text-align: center;
   }
   body {
     font-family: 'Muli', sans-serif;
     font-size: 20px;
     color: #444;
     line-height: 1.5;
+    text-align: center;
   }
+
   /* General Section formatting */
   section {
     min-height: 200px;
     padding: 1% 0 6% 0;
-
   }
     
   section:nth-child(even) {
@@ -42,9 +42,6 @@
   }
 
   /* Header: Picture and Bio */
-  h1{
-    text-align: center;
-  }
   header{
     margin: auto;
     color: rgb(16, 147, 167);
@@ -53,8 +50,6 @@
   header img{
     width: auto;
     height: 400px;
-    margin-right: auto;
-    margin-left: auto;
   }
   #bio{
       background-color: #b1e8ed;
@@ -75,18 +70,37 @@
     background-color: #a71051;
   }
 
+  /* Education */
+  #education p, h4{
+    padding: 0 2% 0 2%;
+    margin: 1%;
+  }
+  #year{
+    font-style: italic;
+  }
+  #SJSU{
+    margin: auto;
+  }
+
   /* Projects */
   #projects{
     color: rgb(222,242,243);
     background-color: rgb(36,69,76);
     width: 100%;
   }
-
   #projects img{
     padding: 1%;
     max-width: 100%;
   }
   
+  /* Skills section */
+
+  #skills ul{
+    text-align: left;
+    list-style-type: none;
+  }
+
+
   /* Button to see more about projects not currently in use no html for it right now */
   .expandbtn{
     font-family: 'Muli', sans-serif;
@@ -96,14 +110,26 @@
     border: 2px solid rgb(88,155,164);
   }
 
+/* Formatting for screen width 800+ */
+  @media only screen and (min-width: 580px) {
+    #skills{
+      padding-bottom: 5%;
+      height: 450px;
+    }
+    
+    #soft-skills, #languages{
+      float: left;
+      width: 50%;
+      max-width: 550px;
+      padding-left: 5%;
+    }
+  }
 
 /* Formatting for screen width 800+ */
-  @media only screen and (min-width: 800px) {
-
-    
+  @media only screen and (min-width: 800px) { 
     /* Formating for header: picture next to bio */
     header{
-      margin:auto;
+      /*margin:auto;*/
       width: 800px;
       padding-top: 2.5%;
     }
@@ -118,8 +144,24 @@
       margin-top: 50px;
       padding-left: 15%;
     }
-  }
 
+    /* Skills section */
+    #outer{
+      width: 800px;
+      margin: auto;
+    }
+    #soft-skills ul{
+      padding-left: 30%;
+    }
+    #languages ul{
+      padding-left: 20%;
+    }
+  }
+  @media only screen and (min-width: 1080px) { 
+    #soft-skills ul{
+      width: 400px;
+    }
+  }
 
 
   /* Color palatte
