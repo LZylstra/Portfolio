@@ -6,11 +6,11 @@
     font-family: 'Ovo', serif;
     color: rgb(16, 147, 167);
     margin-top: 1%;
+    margin-bottom: 1%;
   }
   body {
     font-family: 'Muli', sans-serif;
     font-size: 20px;
-    color: #444;
     line-height: 1.5;
     text-align: center;
   }
@@ -29,9 +29,17 @@
   /* Navigation bar and footer */
   nav,
   footer {
-    padding: .5% 0;
+    padding: .2% 0;
     color: rgb(222,242,243);
     background-color: rgb(36,69,76);
+  }
+  footer a {
+    color: inherit;
+    text-decoration: none;
+  }
+  nav a{
+    color: inherit;
+    text-decoration: none;
   }
   nav {
     position: fixed;
@@ -39,6 +47,25 @@
     left: 0;
     right: 0;
     z-index: 10;
+  }
+  footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  footer li{
+    margin-right: 3em;
+  }
+  nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  nav li{
+    margin-right: 3em;
+  }
+  .large-display{
+    display: none;
   }
 
   /* Header: Picture and Bio */
@@ -92,6 +119,17 @@
     padding: 1%;
     max-width: 100%;
   }
+  #projects a{
+    color: inherit;
+  }
+  .tech{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .tech li{
+    margin-right: 2em;
+  }
   
   /* Skills section */
 
@@ -112,6 +150,14 @@
 
 /* Formatting for screen width 800+ */
   @media only screen and (min-width: 580px) {
+    /*Nav Bar */
+    .mobile-display{
+      display: none;
+    }
+    .large-display{
+      display: flex;
+    }
+    /*Skills Section*/
     #skills{
       padding-bottom: 5%;
       height: 450px;

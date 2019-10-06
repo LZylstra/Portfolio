@@ -6,10 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli|Ovo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f75289d3be.js" crossorigin="anonymous"></script>
     <title>Lindsey's Portfolio</title>
 </head>
 <body>
-    <nav role="navigation">Nav bar</nav>
+    <nav role="navigation">
+      <ul class = "mobile-display">
+          <li><a title ="Education" href = "#education"><i class="fas fa-school"></i></a></li>
+          <li><a title = "Projects" href = "#projects"><i class="fas fa-laptop-code"></i></a></li>
+          <li><a title = "Skills"  href = "#skills"><i class="fas fa-list-alt"></i></a></li>
+          <li><a title = "Contact Me" href = "#contact-info"><i class="fas fa-address-book"></i></a></li>
+      </ul>
+      <ul class = "large-display">
+        <li><a href = "#education">Education</a></li>
+        <li><a href = "#projects">Projects</a></li>
+        <li><a href = "#skills">Skills</a></li>
+        <li><a href = "#contact-info">Contact Me</a></li>
+      </ul>
+    </nav>
     <main role="main">
         <header role="banner">
           <img src = "img/mypicture.jpg" alt = "my picture">
@@ -28,7 +42,7 @@
           <h2>Education</h2>
           <div class = "SJSU">
             <h4>San Jose State University</h4>
-            <p>Bachelor of Science, Software Engineering, 3.6 GPA Cum Laude</p>
+            <p>Bachelor of Science, Software Engineering</p>
             <p id = "year">2014-2017</p>
           </div>
         </section>
@@ -38,10 +52,19 @@
           <div class = "project"> <!--not currently used but to be used when add carousel -->
             <img src="img/QuizAppPic2.png">
             <div class = "project-text">
-              <h3>Title of Project</h3>
-              <p>Tech used</p>
-              <p>Brief description of project</p>
-              <a href = "https://github.com/LZylstra">GitHub Repo <img src = "https://via.placeholder.com/50C/O https://placeholder.com/" alt = "GitHub"></a>
+              <h3>Halloween Quiz App</h3>
+    
+              <h4>Technology used:</h4>
+              <ul class = "tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>jQuery</li>
+                <li>Javascript</li>
+              </ul>
+              <h4>Brief description of project:</h4>
+              <p>Halloween trivia quiz with 5 multiple choice questions</p>
+              <a href = "https://github.com/LZylstra"><i class="fab fa-github-square"></i>GitHub</a>
+              <a href = "https://github.com/LZylstra">Live Demo </a>
             </div>  
           </div>
 
@@ -75,13 +98,19 @@
           </div>
         </section>
     </main>
-    <footer role="content-info">
+    <footer role="content-info" id = "contact-info">
       <h2>Contact information</h2>
       <address>
-        <ul>
-          <li>Email</li>
-          <li>LinkedIn</li>
-          <li>GitHub</li>
+        <ul class = "mobile-display">
+              <li><i class="fas fa-envelope-open-text"></i> <a href = "mailto:lindseyzylstra@gmail.com"></a></li>
+              <li><a href = "https://www.linkedin.com/in/lindsey-zylstra-b18bb3b2/"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href = "https://github.com/LZylstra/Portfolio" ><i class="fab fa-github"></i></a></li>
+        </ul>
+        <ul class = "large-display">
+          <li><i class="fas fa-envelope-open-text"></i> <a href = "mailto:lindseyzylstra@gmail.com"> Email</a></li>
+          <li><a href = "https://www.linkedin.com/in/lindsey-zylstra-b18bb3b2/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href = "https://github.com/LZylstra/Portfolio" ><i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
       </address>
     </footer>
 </body>
