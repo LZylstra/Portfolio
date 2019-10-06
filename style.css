@@ -98,7 +98,7 @@
   }
 
   /* Education */
-  #education p, h4{
+  #education p, #education h4{
     padding: 0 2% 0 2%;
     margin: 1%;
   }
@@ -124,11 +124,10 @@
   }
   .tech{
     list-style: none;
-    display: flex;
-    justify-content: center;
   }
   .tech li{
-    margin-right: 2em;
+    text-align: left;
+    padding-left: 3em;
   }
   
   /* Skills section */
@@ -168,6 +167,15 @@
       width: 50%;
       max-width: 550px;
       padding-left: 5%;
+    }
+
+    /* Projects Section */
+    .tech{
+      display: flex;
+      justify-content: center;
+    }
+    .tech li{
+      margin-right: 2em;
     }
   }
 
