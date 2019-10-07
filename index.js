@@ -13,6 +13,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
+  //var slides = PROJECTS;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
@@ -28,7 +29,6 @@ function showSlides(n) {
 }
 
 function loadProjects(){
-
 $('.project-slideshow').html(`
 <div class = "mySlides fade"></div>
 <img src="img/QuizAppPic2.png">
