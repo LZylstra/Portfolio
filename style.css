@@ -157,9 +157,9 @@ a.next{
   float: right;
   padding-right: 0.25em;
 }
-.prev:hover, .next:hover {
- /* background-color: rgba(0,0,0,0.8);*/
-}
+/*.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}*/
 
 /* The dots/bullets/indicators */
 .dot {
