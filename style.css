@@ -156,9 +156,6 @@ a.next{
   float: right;
   padding-right: 0.25em;
 }
-/*.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}*/
 
 /* The dots/bullets/indicators */
 .dot {
@@ -306,7 +303,7 @@ a.next{
   }
 
 
-  /* Color palatte
+  /* Color palette
   headlines (16,147,167)
   body rgb(36,69,76)
   text rgb(222,242,243)
