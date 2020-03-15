@@ -1,167 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli|Ovo&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f75289d3be.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli|Ovo&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f75289d3be.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Lindsey's Portfolio</title>
-</head>
-<body>
-  <!-- Navigation -->
+  </head>
+  <body>
+    <!-- Navigation -->
     <nav>
-      <ul class = "mobile-display">
-          <li><a title ="Education" href = "#education"><i class="fas fa-school"></i></a></li>
-          <li><a title = "Projects" href = "#projects"><i class="fas fa-laptop-code"></i></a></li>
-          <li><a title = "Skills"  href = "#skills"><i class="fas fa-list-alt"></i></a></li>
-          <li><a title = "Contact Me" href = "#contact-info"><i class="fas fa-address-book"></i></a></li>
+      <ul class="mobile-display">
+        <li>
+          <a title="Education" href="#education"
+            ><i class="fas fa-school"></i
+          ></a>
+        </li>
+        <li>
+          <a title="Projects" href="#projects"
+            ><i class="fas fa-laptop-code"></i
+          ></a>
+        </li>
+        <li>
+          <a title="Skills" href="#skills"><i class="fas fa-list-alt"></i></a>
+        </li>
+        <li>
+          <a title="Contact Me" href="#contact-info"
+            ><i class="fas fa-address-book"></i
+          ></a>
+        </li>
       </ul>
-      <ul class = "large-display">
-        <li><a href = "#education">Education</a></li>
-        <li><a href = "#projects">Projects</a></li>
-        <li><a href = "#skills">Skills</a></li>
-        <li><a href = "#contact-info">Contact Me</a></li>
+      <ul class="large-display">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact-info">Contact Me</a></li>
       </ul>
     </nav>
     <!-- End Navigation -->
     <main>
-        <!-- Header Section -->
-        <header>
-          <img src = "img/mypicture2.jpg" alt = "my picture">
-            <div id = "bio">
-                <h1>Lindsey Zylstra</h1>
-                <p>Hello, I'm Lindsey.  I'm a Software Engineer.   
-                    I've always been a huge nerd, I fell in love with coding when I discovered Linux and shell scripting in high school.</P>  
-                    <p>I also enjoy tinkering with robots and have a secret dream to write code for a robot as cute as Wall-E.  
-                    Coding is something that I enjoy doing because for me nothing is better than working together with a team and solving complex problems. </p> 
-                    <p>In my free time I love to be outdoors; backpacking, kayaking and hiking are my favorite things to do.</p>
-            </div>  
-            <div id = "color-accent"></div>
-        </header>
-        <!-- End Navigation -->
-        <!-- Education Section -->
-        <section id = "education">
-          <h2>Education</h2>
-          <div class = "SJSU">
-            <h4>San Jose State University</h4>
-            <p>Bachelor of Science, Software Engineering</p>
-            <p id = "year">2014-2017</p>
-          </div>
-        </section>
-        <!-- End Education -->
-        <!-- Projects Section -->
-        <section id = "projects">
-          <h2>Projects</h2>
-          <div id = "dots">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-          </div>
-          <div class = "project-slideshow"> 
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <div class = "mySlides fade">
-              <img src="img/QuizAppPic2.png" alt = "Picture of Project">
-              <div class = "project-text">
-                <h3>Halloween Quiz App</h3>
-                <h4>Technology used:</h4>
-                <ul class = "tech">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>jQuery</li>
-                  <li>Javascript</li>
-                </ul>
-                <h4>Brief description of project:</h4>
-                <p>A quiz app for the Halloween enthusiast to test their knowledge of the holiday.  Contains 5 trivia questions.</p>
-                <a class = "github" href = "https://github.com/LZylstra/Quiz-App" target="_blank"><i class="fab fa-github-square"></i> GitHub</a>
-                <a href = "https://lzylstra.github.io/Quiz-App/" target="_blank">Live Demo </a>
-              </div>
-            </div>  
-            
-            <div class = "mySlides fade">
-                <img src="img/azazels.png" alt = "Picture of Project">
-                <div class = "project-text">
-                  <h3>Azazel's Revenge</h3>
-                  <h4>Technology used:</h4>
-                  <ul class = "tech">
-                    <li>Written in C</li>
-                  </ul>
-                  <h4>Brief description of project:</h4>
-                  <p>2D platformer game and game engine with physics and graphics.</p>
-                  <a class = "github" href = "https://github.com/LZylstra/Azazels-Revenge" target="_blank"><i class="fab fa-github-square"></i> GitHub</a>
-                </div>
-              </div>  
-              <div class = "mySlides fade">
-                <img src="img/helpmedecide_home.jpg" alt = "Picture of Project">
-                <div class = "project-text">
-                  <h3>Help Me Decide</h3>
-                  <h4>Technology used:</h4>
-                  <ul class = "tech">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>jQuery</li>
-                    <li>Javascript</li>
-                    <li>Yelp Fusion API</li>
-                    <li>Edamam API</li>
-                  </ul>
-                  <h4>Brief description of project:</h4>
-                  <p>Our app provides helpful suggestions when you’re hungry and are not sure what to eat. You can choose to receive suggestions on something to cook at home or for restaurants near you.</p>
-                  <a class = "github" href = "https://github.com/LZylstra/Help-Me-Decide"><i class="fab fa-github-square"></i> GitHub</a>
-                  <a href = "https://lzylstra.github.io/Help-Me-Decide/">Live Demo </a>
-                  </div>
-              </div>  
-            </div>
-        </section>
-        <!-- End Projects -->
-        <!-- Skills Section -->
-        <section id = "skills">
-          <h2>Skills</h2>
-          <div id = "outer">
-            <div id = "languages">
-              <h4>Languages / Technology</h4>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
-                  <li>Java</li>
-                  <li>C++</li>
-                  <li>C</li>
-                </ul>
-            </div>
-            <div id = "soft-skills">
-              <h4>Soft Skills</h4>
-                <ul>
-                  <li>Communication</li>
-                  <li>Ability to work under pressure</li>
-                  <li>Self-motivated</li>
-                  <li>Conflict Resolution</li>
-                  <li>Adaptability</li>
-                  <li>Leadership</li>
-                </ul>
+      <!-- Header Section -->
+      <header>
+        <img src="img/mypicture2.jpg" alt="my picture" />
+        <div id="bio">
+          <h1>Lindsey Zylstra</h1>
+          <p>
+            Hello, I'm Lindsey. I'm a Software Engineer. I've always been a huge
+            nerd, I fell in love with coding when I discovered Linux and shell
+            scripting in high school.
+          </p>
+          <p>
+            I also enjoy tinkering with robots and have a secret dream to write
+            code for a robot as cute as Wall-E. Coding is something that I enjoy
+            doing because for me nothing is better than working together with a
+            team and solving complex problems.
+          </p>
+          <p>
+            In my free time I love to be outdoors; backpacking, kayaking and
+            hiking are my favorite things to do.
+          </p>
+        </div>
+        <div id="color-accent"></div>
+      </header>
+      <!-- End Navigation -->
+      <!-- Education Section -->
+      <section id="education">
+        <h2>Education</h2>
+        <div class="SJSU">
+          <h4>San Jose State University</h4>
+          <p>Bachelor of Science, Software Engineering</p>
+          <p id="year">2014-2017</p>
+        </div>
+      </section>
+      <!-- End Education -->
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="project-slideshow">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="mySlides fade">
+            <img src="img/QuizAppPic2.png" alt="Picture of Project" />
+            <div class="project-text">
+              <h3>Halloween Quiz App</h3>
+              <h4>Technology used:</h4>
+              <ul class="tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>jQuery</li>
+                <li>Javascript</li>
+              </ul>
+              <h4>Brief description of project:</h4>
+              <p>
+                A quiz app for the Halloween enthusiast to test their knowledge
+                of the holiday. Contains 5 trivia questions.
+              </p>
+              <a
+                class="github"
+                href="https://github.com/LZylstra/Quiz-App"
+                target="_blank"
+                ><i class="fab fa-github-square"></i> GitHub</a
+              >
+              <a href="https://lzylstra.github.io/Quiz-App/" target="_blank"
+                >Live Demo
+              </a>
             </div>
           </div>
-        </section>
-        <!-- End Skills -->
+
+          <div class="mySlides fade">
+            <img src="img/tattoo-app.png" alt="Picture of Project" />
+            <div class="project-text">
+              <h3>Tattoo Task Tracker</h3>
+              <h4>Technology used:</h4>
+              <ul class="tech">
+                <li>React.js</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>PostgreSQL</li>
+              </ul>
+              <h4>Brief description of project:</h4>
+              <p>
+                An application targeted at tattoo artists that helps them stay
+                organized by giving them the ability to create and view
+                schedules as well as manage client and tattoo information.
+              </p>
+              <a
+                class="github"
+                href="https://github.com/LZylstra/Tattoo-Planner-app"
+                target="_blank"
+                ><i class="fab fa-github-square"></i> GitHub</a
+              >
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img src="img/helpmedecide_home.jpg" alt="Picture of Project" />
+            <div class="project-text">
+              <h3>Help Me Decide</h3>
+              <h4>Technology used:</h4>
+              <ul class="tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>jQuery</li>
+                <li>Javascript</li>
+                <li>Yelp Fusion API</li>
+                <li>Edamam API</li>
+              </ul>
+              <h4>Brief description of project:</h4>
+              <p>
+                Our app provides helpful suggestions when you’re hungry and are
+                not sure what to eat. You can choose to receive suggestions on
+                something to cook at home or for restaurants near you.
+              </p>
+              <a
+                class="github"
+                href="https://github.com/LZylstra/Help-Me-Decide"
+                ><i class="fab fa-github-square"></i> GitHub</a
+              >
+              <a href="https://lzylstra.github.io/Help-Me-Decide/"
+                >Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Projects -->
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div id="outer">
+          <div id="languages">
+            <h4>Languages / Technology</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+          <div id="soft-skills">
+            <h4>Soft Skills</h4>
+            <ul>
+              <li>Communication</li>
+              <li>Ability to work under pressure</li>
+              <li>Self-motivated</li>
+              <li>Conflict Resolution</li>
+              <li>Adaptability</li>
+              <li>Leadership</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills -->
     </main>
     <!-- Contact Info Section -->
-    <footer id = "contact-info">
+    <footer id="contact-info">
       <h2>Contact information</h2>
       <address>
-        <ul class = "mobile-display">
-              <li><a href = "mailto:lindseyzylstra@gmail.com"><i class="fas fa-envelope-open-text"></i></a></li>
-              <li><a href = "https://www.linkedin.com/in/lindsey-zylstra-b18bb3b2/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href = "https://github.com/LZylstra" target="_blank" ><i class="fab fa-github"></i></a></li>
+        <ul class="mobile-display">
+          <li>
+            <a href="mailto:lindseyzylstra@gmail.com"
+              ><i class="fas fa-envelope-open-text"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/lindsey-zylstra-b18bb3b2/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/LZylstra" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
         </ul>
-        <ul class = "large-display">
-          <li><i class="fas fa-envelope-open-text"></i> <a href = "mailto:lindseyzylstra@gmail.com"> Email</a></li>
-          <li><a href = "https://www.linkedin.com/in/lindsey-zylstra-b18bb3b2/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-          <li><a href = "https://github.com/LZylstra"  target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        <ul class="large-display">
+          <li>
+            <i class="fas fa-envelope-open-text"></i>
+            <a href="mailto:lindseyzylstra@gmail.com"> Email</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/lindsey-zylstra-b18bb3b2/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/LZylstra" target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
     <!-- End Contact Info -->
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
