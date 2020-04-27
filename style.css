@@ -32,7 +32,7 @@ section:nth-child(even) {
 nav,
 footer {
   padding: 0.2% 0;
-  color: white;
+  color: black;
   /* color: rgb(222, 242, 243); */
   background-color: rgb(88, 155, 164);
 }
@@ -61,7 +61,7 @@ footer ul {
 }
 footer li {
   margin-right: 3em;
-  text-shadow: 2px 2px 8px black;
+  /* text-shadow: 2px 2px 8px black; */
 }
 nav ul {
   list-style-type: none;
@@ -70,7 +70,7 @@ nav ul {
 }
 nav li {
   margin-right: 1.8em;
-  text-shadow: 2px 2px 8px black;
+  /* text-shadow: 2px 2px 8px black; */
 }
 .large-display {
   display: none;
@@ -99,6 +99,7 @@ header img {
   text-align: left;
 }
 #bio h1 {
+  color: black;
   margin-top: 0px;
   margin-bottom: 5px;
 }
