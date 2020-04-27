@@ -32,7 +32,8 @@ section:nth-child(even) {
 nav,
 footer {
   padding: 0.2% 0;
-  color: rgb(222, 242, 243);
+  color: white;
+  /* color: rgb(222, 242, 243); */
   background-color: rgb(88, 155, 164);
 }
 footer a {
@@ -126,6 +127,7 @@ header img {
   width: 100%;
 }
 #projects h2 {
+  color: white;
   text-shadow: 2px 2px 8px black;
 }
 #projects img {
