@@ -35,6 +35,15 @@ footer {
   color: rgb(222, 242, 243);
   background-color: rgb(88, 155, 164);
 }
+
+nav a:hover,
+footer a:hover {
+  margin-bottom: 10px;
+  background-color: rgba(36, 69, 76, 0.3);
+  padding: 5px;
+  border-radius: 8px;
+  text-shadow: 2px 1px 1px black;
+}
 footer a {
   color: inherit;
   text-decoration: none;
@@ -74,7 +83,9 @@ nav li {
 .large-display {
   display: none;
 }
-
+.fa-envelope-open-text {
+  padding-right: 2px;
+}
 /* Header: Picture and Bio */
 header {
   margin: auto;
@@ -115,8 +126,19 @@ header img {
 #year {
   font-style: italic;
 }
-#SJSU {
+#SJSU,
+#Thinkful {
   margin: auto;
+}
+#Thinkful {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#SJSU::after {
+  content: "__";
+  color: rgb(16, 147, 167);
+  font-size: 150%;
+  font-weight: bold;
 }
 
 /* Projects */
